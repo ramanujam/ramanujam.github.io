@@ -24,18 +24,6 @@
 	<!-- <link rel="stylesheet" href="css/themes/yellow-black.css"> -->
 </head>
 <body>
-	<div id="like_button_container"></div>
-	<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="d8374a75-a9ba-47a7-bc0f-1130e7ee08ed"></div>
-  <script type="text/javascript">
-    (function() {
-      var s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = '//cdn.youracclaim.com/assets/utilities/embed.js';
-      var o = document.getElementsByTagName('script')[0];
-      o.parentNode.insertBefore(s, o);
-      })();
-  </script>
 
 	<main>
 		<div class="intro">Hello, I'm Rohan!</div>
@@ -46,14 +34,25 @@
 			<a target="_blank" href="https://twitter.com/rhntweets"><i class="fab fa-twitter"></i></a>
 			<a target="_blank" href="https://www.linkedin.com/in/singhrhn"><i class="fab fa-linkedin"></i></a>
 			<a target="_blank" href="https://medium.com/@rohans1"><i class="fab fa-medium"></i></a>
-    </div>
-	</main>
-	<!-- Load React. -->
-  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-
-  <!-- Load our React component. -->
-  <script src="like_button.js"></script>
+    	</div>
+    	</main>
+    	<div align="center">
+    	<script type="text/javascript">
+	  	var badges = ["d8374a75-a9ba-47a7-bc0f-1130e7ee08ed", "2712f9a1-185d-4493-a1a4-8370db5358d5", "38915d0c-cf6c-4d4f-b2c7-823814bcfcee", "444c94c8-c643-476f-8512-697ff19e996a"]
+	  	for (var i = badges.length - 1; i >= 0; i--) {
+	  		var html = '<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id=' + badges[i] + "></div>" + 
+	  		"<script> (function() { " +
+		      "var s = document.createElement('script');" +
+		      "s.type = 'text/javascript';"+
+		      "s.async = true;"+
+		      "s.src = '//cdn.youracclaim.com/assets/utilities/embed.js';"+
+		      "var o = document.getElementsByTagName('script')[0];"+
+		      "o.parentNode.insertBefore(s, o);"+
+		      "})();"+
+		      "</" + "script>"
+		      document.write(html)
+	  	}
+	  </script>
+	</div>
 </body>
 </html>
