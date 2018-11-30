@@ -14,6 +14,30 @@ body {
   line-height: 1.5em;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+header * {
+    display: inline;
+    align-items: stretch;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: white;
+    text-decoration: none;
+}
+
 a {
   color: #66cc99;
   text-decoration: none;
@@ -251,6 +275,17 @@ a {
   margin-bottom: 15px;
 }
 
+.experience .experience-more-title {
+  color: white;
+  font-size: .8em;
+  margin-bottom: 5px;
+}
+
+.experience .experience-description {
+  font-size: .8em;
+  margin-bottom: 5px;
+}
+
 .section-padding {
   padding: 60px 60px 40px 40px;
 }
@@ -272,6 +307,7 @@ a {
   color: #9099a0;
   font-weight: 300;
   margin-bottom: 20px;
+  margin-left: 3px;
 }
 @media (max-width: 450px) {
   .section-wrapper {
@@ -350,7 +386,7 @@ a {
     width: 0%;
   }
   to {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -359,7 +395,7 @@ a {
     width: 0%;
   }
   to {
-    width: 80%;
+    width: 90%;
   }
 }
 @-webkit-keyframes skill_2 {
@@ -383,7 +419,7 @@ a {
     width: 0%;
   }
   to {
-    width: 50%;
+    width: 70%;
   }
 }
 @keyframes skill_3 {
@@ -391,7 +427,7 @@ a {
     width: 0%;
   }
   to {
-    width: 50%;
+    width: 70%;
   }
 }
 @-webkit-keyframes skill_4 {
@@ -399,7 +435,7 @@ a {
     width: 0%;
   }
   to {
-    width: 60%;
+    width: 90%;
   }
 }
 @keyframes skill_4 {
@@ -407,7 +443,7 @@ a {
     width: 0%;
   }
   to {
-    width: 60%;
+    width: 90%;
   }
 }
 @-webkit-keyframes skill_5 {
@@ -431,7 +467,7 @@ a {
     width: 0%;
   }
   to {
-    width: 70%;
+    width: 80%;
   }
 }
 @keyframes skill_6 {
@@ -439,7 +475,7 @@ a {
     width: 0%;
   }
   to {
-    width: 70%;
+    width: 80%;
   }
 }
 @-webkit-keyframes skill_7 {
