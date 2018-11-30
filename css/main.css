@@ -97,6 +97,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 @import url(https://fonts.googleapis.com/css?family=Raleway:200,100,400);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
  
  body {
    background:
@@ -109,6 +110,7 @@ textarea {
    height: 100vh;
    font-family: 'Raleway', sans-serif;
    margin-top: 80px;
+     padding: 30px;
  } 
 
 @keyframes example {
@@ -127,11 +129,11 @@ textarea {
  
  
  header img{
-   height: 80px
+   height: 80px;
  }
 
 header {
-    
+    background-color: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -183,14 +185,102 @@ h1,h2 {
    animation-duration: 100s;
    }
  
- p {
-   margin: 0;
-   font-size: 1.3rem;
- }
- 
- main {
-   
- }
+
+article {
+    display: grid;
+    grid-template-columns: minmax(1.2rem, 1fr) minmax(auto, 57ch) minmax(1.2rem, 1fr);
+}
+
+
+article > blockquote {
+    grid-column: 3 / 5;
+    padding-left: 10px;
+    color: #666;
+    border-left: 3px solid black;
+}
+
+article > h1 {
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  line-height: 60%;
+  font-size: 34px;
+  color: ghostwhite;
+  line-height: 1;
+    font-weight: bold;
+}
+
+article > p {    
+    grid-column: 2;
+   padding: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  line-height: 34px;
+  color: whitesmoke;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+article > img {
+  grid-column: 1 / 4;
+  width: 100%;
+  max-width: 100ch;
+  justify-self: center;
+  padding: 30px
+}
+
+article > * {
+    grid-column: 2;
+}
+
+article > .aside {
+    font-family: Lucida Grande;
+    margin: 30px 20px;
+    color: #666;
+    font-size: 0.8em;
+    grid-column: 5;
+}
+
+.line-numbers a {
+    text-decoration: none;
+    color: #000;
+    padding-right: 1em;
+}
+
+code {
+    background: #eee;
+    padding: 2px 5px;
+}
+
+pre {
+    background: #eee;
+    padding: 10px 15px;
+    overflow: auto;
+}
+
+pre > code {
+    padding: 0;
+}
+
+figure {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+  color: aquamarine;
+}
+
+img.scaled {
+  width: 100%;
+}
+
 
 
 
